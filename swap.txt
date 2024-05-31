@@ -1,0 +1,22 @@
+Imports System
+
+Module Program
+    Sub Main()
+
+        Dim a as Integer = 10
+        Dim b as Integer = 20
+        Dim c as Integer = 30
+
+        a = a + b + c = 60
+        b = a - (b + c) = 10
+        c = a - (b + c) = 20
+        a = a - (b + c) = 30
+
+        Console.WriteLine("a = " & a)
+Console.WriteLine("b = " & b)
+Console.WriteLine("c = " & c)
+
+     
+        Console.Readkey()
+    End Sub
+End Module
