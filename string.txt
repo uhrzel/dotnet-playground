@@ -1,0 +1,14 @@
+Imports System
+
+Module Program
+    Sub Main()
+
+        Dim str As String = "Ako ay"
+
+        str &= "gwapo"
+        Console.writeline(str)
+
+       
+        Console.Readkey()
+    End Sub
+End Module
