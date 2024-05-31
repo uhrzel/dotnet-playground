@@ -1,0 +1,20 @@
+Imports System
+
+Module Program
+    Sub Main()
+
+        Dim array() As Integer = {1,2,3,4,5}
+
+        For Each var As Integer in array
+
+            If var Mod 2 = 0 Then
+                Console.WriteLine(var & " is Even")
+            Else
+                Console.WriteLine(var & " not Even")
+
+            End If
+        
+        Next  
+        Console.Readkey()
+    End Sub
+End Module
