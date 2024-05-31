@@ -11,24 +11,20 @@ Module Program
             userInputArray(var) = Convert.toInt32(Console.ReadLine())
         Next  
 
-        Dim target As Integer = 0
-        Dim temp1 As Integer = 0
-        Dim temp2 As Integer = 0
-        
-        Console.Write("Enter Target: ")
-        target = Convert.toInt32(Console.ReadLine())
-
-
+        Dim temp As Integer = 0
         For i As Integer = 0 to arraySize - 1
                 For x As Integer = 0 to arraySize - 1 
-                    If userInputArray(x) + userInputArray(i) = target And i <> x  Then
-                        temp1 = x
-                        temp2 = i
+                    If userInputArray(x) > userInputArray(i) Then
+                        temp = userInputArray(i)
+                        userInputArray(i) = userInputArray(x)
+                        userInputArray(x) = temp
                     End If
                 Next 
         Next
 
-       Console.WriteLine("[" & temp1 & "][" & temp2 & "]")
+        For Each j As Integer In userInputArray
+            Console.Write(j & " ")
+        Next
 
     End Sub
 End Module
